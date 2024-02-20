@@ -1,6 +1,5 @@
 #include "sort.h"
 
-
 /**
  * bubble_sort - Calls function
  * @array: Array to be sorted
@@ -9,18 +8,17 @@
  * Return: 0
  */
 
-
 void bubble_sort(int *array, size_t size)
 {
 	unsigned int i, j;
-    bool swapped;
+	bool swapped;
 
 	if (!array)
 		return;
 
 	for (i = 0; i < size - 1; i++)
 	{
-        swapped = false;
+		swapped = false;
 		for (j = 0; j < size - i - 1; j++)
 		{
 			if (array[j] > array[j + 1])
@@ -31,7 +29,7 @@ void bubble_sort(int *array, size_t size)
 			}
 		}
 	if (!swapped)
-		 break;
+		break;
 	}
 }
 
